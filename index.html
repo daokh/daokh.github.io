@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -14,8 +13,8 @@ html {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f6f7fb;
-  color: #111;
+  background: #0b1220; /* deep navy */
+  color: #e6f0ff;
 }
 
 /* NAV */
@@ -23,43 +22,50 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #0f172a;
-  color: white;
+  background: rgba(10, 18, 32, 0.95);
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
-  gap: 20px;
-  padding: 15px;
+  gap: 22px;
+  padding: 14px;
   z-index: 1000;
+  border-bottom: 1px solid rgba(100, 180, 255, 0.15);
 }
 
 nav a {
-  color: white;
+  color: #b9d7ff;
   text-decoration: none;
   font-size: 14px;
+  letter-spacing: 0.3px;
   opacity: 0.85;
+  transition: 0.2s;
 }
 
 nav a:hover {
   opacity: 1;
+  color: #ffffff;
 }
 
 /* HEADER */
 header {
-  padding: 120px 20px 80px;
+  padding: 130px 20px 90px;
   text-align: center;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: white;
+  background: radial-gradient(circle at top, #14213d, #0b1220);
+  border-bottom: 1px solid rgba(100, 180, 255, 0.15);
 }
 
 header h1 {
   margin: 0;
-  font-size: 44px;
+  font-size: 46px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
 }
 
 header p {
-  margin-top: 10px;
+  margin-top: 12px;
   font-size: 18px;
-  opacity: 0.8;
+  color: #9cc7ff;
+  opacity: 0.9;
 }
 
 /* SECTIONS */
@@ -70,38 +76,54 @@ section {
 }
 
 h2 {
-  font-size: 26px;
-  border-left: 5px solid #2563eb;
-  padding-left: 10px;
-  margin-bottom: 25px;
+  font-size: 24px;
+  color: #cfe6ff;
+  border-left: 4px solid #4ea1ff;
+  padding-left: 12px;
+  margin-bottom: 22px;
 }
 
+/* CARDS */
 .card {
-  background: white;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(120, 180, 255, 0.15);
   padding: 20px;
   margin-bottom: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  color: #dbeafe;
 }
 
 /* SKILLS */
 .skills span {
   display: inline-block;
-  background: #e5e7eb;
+  background: rgba(78, 161, 255, 0.12);
+  border: 1px solid rgba(120, 180, 255, 0.2);
+  color: #cfe6ff;
   padding: 6px 12px;
   margin: 5px;
   border-radius: 20px;
   font-size: 12px;
 }
 
+/* LINKS */
+a {
+  color: #7ec3ff;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
 /* FOOTER */
 footer {
   text-align: center;
   padding: 40px;
-  color: #666;
+  color: #7f9bbd;
+  border-top: 1px solid rgba(100, 180, 255, 0.15);
+  margin-top: 40px;
 }
 </style>
-
 </head>
 
 <body>
@@ -136,21 +158,15 @@ footer {
     <b>Northrop Grumman — Sr. Software Engineer</b><br/>
     Apr 2001 – Present · San Diego<br/><br/>
     Technical lead responsible for design, implementation, and integration of defense-related systems
-    across multiple programs.
+    across multiple programs.<br/><br/>
 
-```
-<br/><br/>
-<b>Key Program: Battlefield Airborne Communications Node (BACN)</b><br/>
-BACN is an airborne communications relay system that extends communication ranges and bridges
-incompatible radio systems, enabling seamless voice, video, imagery, and data exchange across
-tactical environments. Supports waveforms including SINCGARS, DAMA, EPLRS, SADL, Link 16, TCDL, and 802.11b.
+    <b>Key Program: Battlefield Airborne Communications Node (BACN)</b><br/>
+    Airborne communications relay system enabling interoperability across tactical networks and extending
+    communication range for voice, video, imagery, and data.<br/><br/>
 
-<br/><br/>
-<b>Key Program: Joint Effects Model (JEM)</b><br/>
-A validated predictive modeling system for Nuclear, Biological, Chemical (NBC) and Toxic Industrial Chemical events.
-Integrates with C4I platforms, warning systems, weather data, and operational planning tools.
-```
-
+    <b>Key Program: Joint Effects Model (JEM)</b><br/>
+    Predictive modeling system for NBC and toxic chemical events integrated with C4I platforms,
+    weather systems, and operational planning tools.
   </div>
 
   <div class="card">
@@ -187,7 +203,6 @@ Integrates with C4I platforms, warning systems, weather data, and operational pl
 
 <section id="education">
   <h2>Education</h2>
-
   <div class="card">
     <b>University of California, San Diego (UCSD)</b><br/>
     Bachelor of Science (B.S.), Computer Science<br/>
@@ -197,7 +212,6 @@ Integrates with C4I platforms, warning systems, weather data, and operational pl
 
 <section id="certs">
   <h2>Certifications</h2>
-
   <div class="card">
     <b>iOS Programming Certificate</b><br/>
     UC San Diego Extended Studies<br/>
