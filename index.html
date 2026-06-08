@@ -1,146 +1,224 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khanh Dao | Portfolio</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Senior Software Engineer | Portfolio</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            line-height: 1.6;
-            color: #333;
-        }
+<style>
+html {
+  scroll-behavior: smooth;
+}
 
-        header {
-            background: #1f2937;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f7fb;
+  color: #111;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-        }
+/* NAV */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  z-index: 1000;
+}
 
-        header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.85;
+}
 
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
+nav a:hover {
+  opacity: 1;
+}
 
-        h2 {
-            color: #1f2937;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
+/* HEADER */
+header {
+  padding: 120px 20px 80px;
+  text-align: center;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
 
-        .project {
-            background: #f4f4f4;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 8px;
-        }
+header h1 {
+  margin: 0;
+  font-size: 44px;
+}
 
-        .skills span {
-            display: inline-block;
-            background: #e5e7eb;
-            padding: 8px 12px;
-            margin: 5px;
-            border-radius: 20px;
-        }
+header p {
+  margin-top: 10px;
+  font-size: 18px;
+  opacity: 0.8;
+}
 
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: #1f2937;
-            color: white;
-        }
+/* SECTIONS */
+section {
+  max-width: 950px;
+  margin: auto;
+  padding: 70px 20px;
+}
 
-        a {
-            color: #2563eb;
-            text-decoration: none;
-        }
+h2 {
+  font-size: 26px;
+  border-left: 5px solid #2563eb;
+  padding-left: 10px;
+  margin-bottom: 25px;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  background: #e5e7eb;
+  padding: 6px 12px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+</style>
+
 </head>
+
 <body>
 
+<nav>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#education">Education</a>
+  <a href="#certs">Certifications</a>
+  <a href="#contact">Contact</a>
+</nav>
+
 <header>
-    <h1>Khanh Dao</h1>
-    <p>Software Engineering Manager | Technology Leader | Investor</p>
+  <h1>Senior Software Engineer</h1>
+  <p>Systems Architecture | Defense & Mission-Critical Software | Technical Leadership</p>
 </header>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am a software engineering manager with experience leading
-        engineering teams, delivering large-scale software projects,
-        and building high-performing organizations.
-    </p>
+<section id="about">
+  <h2>About</h2>
+  <div class="card">
+    Senior Software Engineer with 25+ years of experience designing, building, and integrating
+    mission-critical defense and communications systems. Extensive background in system architecture,
+    distributed systems, and cross-functional technical leadership across large-scale Air Force programs.
+  </div>
 </section>
 
-<section>
-    <h2>Projects</h2>
+<section id="experience">
+  <h2>Experience</h2>
 
-    <div class="project">
-        <h3>Enterprise Platform Modernization</h3>
-        <p>
-            Led a team to migrate legacy systems to cloud-native
-            architecture, improving reliability and scalability.
-        </p>
-    </div>
+  <div class="card">
+    <b>Northrop Grumman — Sr. Software Engineer</b><br/>
+    Apr 2001 – Present · San Diego<br/><br/>
+    Technical lead responsible for design, implementation, and integration of defense-related systems
+    across multiple programs.
 
-    <div class="project">
-        <h3>AI Productivity Tools</h3>
-        <p>
-            Evaluated and integrated AI tools to improve developer
-            productivity and software quality.
-        </p>
-    </div>
+```
+<br/><br/>
+<b>Key Program: Battlefield Airborne Communications Node (BACN)</b><br/>
+BACN is an airborne communications relay system that extends communication ranges and bridges
+incompatible radio systems, enabling seamless voice, video, imagery, and data exchange across
+tactical environments. Supports waveforms including SINCGARS, DAMA, EPLRS, SADL, Link 16, TCDL, and 802.11b.
 
-    <div class="project">
-        <h3>Personal Investment Dashboard</h3>
-        <p>
-            Built a dashboard to track retirement planning,
-            investments, and financial goals.
-        </p>
-    </div>
+<br/><br/>
+<b>Key Program: Joint Effects Model (JEM)</b><br/>
+A validated predictive modeling system for Nuclear, Biological, Chemical (NBC) and Toxic Industrial Chemical events.
+Integrates with C4I platforms, warning systems, weather data, and operational planning tools.
+```
+
+  </div>
+
+  <div class="card">
+    <b>SPAWAR — Computer Scientist</b><br/>
+    Aug 1998 – Aug 2000<br/>
+    Software development supporting defense communication systems using C++ and systems engineering practices.
+  </div>
+
+  <div class="card">
+    <b>SAIC — Software Analyst</b><br/>
+    Mar 1997 – Jun 1998<br/>
+    Early career role focused on software analysis and C++ development for engineering systems.
+  </div>
 </section>
 
-<section>
-    <h2>Skills</h2>
-
-    <div class="skills">
-        <span>Leadership</span>
-        <span>Software Architecture</span>
-        <span>Cloud Computing</span>
-        <span>AI & Machine Learning</span>
-        <span>Agile Development</span>
-        <span>Project Management</span>
-    </div>
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>System Architecture</span>
+    <span>Distributed Systems</span>
+    <span>Defense Systems</span>
+    <span>C++</span>
+    <span>Python</span>
+    <span>Java</span>
+    <span>ElasticSearch</span>
+    <span>Ansible</span>
+    <span>Back-End Development</span>
+    <span>Full-Stack Development</span>
+    <span>UML</span>
+    <span>Robot Framework</span>
+    <span>Technical Leadership</span>
+  </div>
 </section>
 
-<section>
-    <h2>Contact</h2>
+<section id="education">
+  <h2>Education</h2>
 
-    <p>Email: your-email@example.com</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
-    <p>GitHub: github.com/yourusername</p>
+  <div class="card">
+    <b>University of California, San Diego (UCSD)</b><br/>
+    Bachelor of Science (B.S.), Computer Science<br/>
+    1993 – 1998
+  </div>
+</section>
+
+<section id="certs">
+  <h2>Certifications</h2>
+
+  <div class="card">
+    <b>iOS Programming Certificate</b><br/>
+    UC San Diego Extended Studies<br/>
+    Issued: Sep 2015<br/>
+    <a href="https://extension.ucsd.edu/courses-and-programs/ios-programming" target="_blank">
+      View Program
+    </a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    Email: your-email@example.com<br/>
+    LinkedIn: your-linkedin-url<br/>
+    GitHub: your-github-url
+  </div>
 </section>
 
 <footer>
-    <p>© 2026 Khanh Dao. All Rights Reserved.</p>
+  © 2026 Senior Software Engineer Portfolio
 </footer>
 
 </body>
